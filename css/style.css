@@ -1,0 +1,132 @@
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+ul li
+{
+    cursor: pointer;
+}
+/* VAR */
+:root
+{
+    --mainColor : #fff
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+/* End Global Style */
+
+/* Start Navbar Style */
+
+.top-menue ul li
+{
+    padding-top: .75rem;
+    /* transition: all 0.5s; */
+}
+.w-20
+{
+    width: 20%;
+}
+.navbar-container
+{
+    left: -242.225px;
+}
+.top-menue ul li
+{
+    position: relative;
+    top: 200px;
+}
+/* End Navbar Style */
+
+/* Start Product Style */
+
+.layer
+{
+    top: 100%;
+    transition: all 0.5s;
+}
+.item:hover .layer
+{
+    top: 0%;
+}
+/* End Product Style */
+
+
+/* Start Search Style */
+#SByName ,#SByName::placeholder , #SByLetter,#SByLetter::placeholder
+{
+    color: white;
+}
+/* End Search Style */
+
+
+/* Start Singel Product Style */
+.recipes li,.tag li
+{
+    margin: 5px;
+    padding: 5px;
+}
+/* End Singel Product  Style */
+.loader {
+    width: 50px;
+    height: 165px;
+    position: relative;
+  }
+  .loader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50% , 0);
+    width: 16px;
+    height: 16px;
+    background: #FF3D00;
+    border-radius: 50%;
+    animation: bounce 2s linear infinite;
+  }
+  .loader::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 48px;
+    width: 48px;
+    background: #fff;
+    border-radius: 4px;
+    animation: rotate 2s linear infinite;
+  }
+  @keyframes bounce {
+    0% , 50% , 100%{
+      transform: translate(-50%, 0px);
+      height: 20px;
+    }
+    20% {
+      transform: translate(-25%, 85px);
+      height: 28px;
+    }
+    25% {
+      transform: translate(-25%, 110px);
+      height: 12px;
+    }
+    70% {
+      transform: translate(-75%, 85px);
+      height: 28px;
+    }
+    75% {
+      transform: translate(-75%, 108px);
+      height: 12px;
+    }
+  }
+  @keyframes rotate {
+    0% , 50% , 100%{ transform: rotate(0deg)}
+    25% { transform: rotate(90deg)}
+    75%{ transform: rotate(-90deg)}
+  }
